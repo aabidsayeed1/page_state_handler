@@ -1,39 +1,44 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# page_state_handler
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+The `page_state_handler` Flutter package is designed to add a touch of elegance to your application's user experience. This package streamlines the management of various page states, making it effortless for developers to handle loading, error, empty, and retry scenarios seamlessly. By integrating this package into your Flutter project, you empower your application to respond gracefully to different states, presenting users with content and actions tailored to each specific situation.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+Enhance your development workflow and elevate the overall quality of your app by incorporating the `page_state_handler` package. With its intuitive features, developers can focus on creating engaging and dynamic user interfaces without the hassle of manually managing diverse page states. Elevate your Flutter application to new heights, ensuring a smoother, more user-friendly experience for your audience.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Example
 
-## Features
+![Screen Recording 2023-10-14 at 6 31 52 PM](https://github.com/aabidsayeed1/page_state_handler/assets/37657822/f9fa3a2e-5e6d-4e67-9076-559c7f05100c)
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Descriptions
 
-## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Sample
 
-## Usage
+#### PageStateHandle
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```
+ PageStateHandler(
+        controller: pageStateController,
+        retry: () => Future(() => retry()),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                'You have pushed the button this many times:',
+              ),
+              Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ],
+          ),
+        ),
+      ),
 ```
 
-## Additional information
+## Author
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+<a class="github-button" href="https://github.com/aabidsayeed1" aria-label="Follow @aabidsayeed1 on GitHub">Follow @aabidsayeed1</a>
+
+<a class="github-button" href="https://www.linkedin.com/in/aabidsayeed1/" aria-label="LinkedIn: aabidsayeed1">LinkedIn: @Abid Bin Syeed</a>
+

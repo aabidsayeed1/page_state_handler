@@ -1,6 +1,6 @@
 name: page_state_handler
-description: The page_state_handler Flutter package simplifies the management of different page states, providing developers with a streamlined solution for handling loading, error, empty, and retry scenarios in their applications. This package aims to enhance the user experience by presenting relevant content and actions based on the state of the page..
-version: 0.0.1
+description: loading, error, empty, and retry scenarios, enhancing user experience with content based on page state.
+version: 0.0.2
 homepage: https://github.com/aabidsayeed1/page_state_handler
 
 environment:

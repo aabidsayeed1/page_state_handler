@@ -13,7 +13,14 @@ Enhance your development workflow and elevate the overall quality of your app by
 
 ## Sample
 
-#### PageStateHandle
+#### PageStateController
+
+```
+PageStateController pageStateController = PageStateController();
+
+```
+
+#### PageStateHandle Widget
 
 ```
  PageStateHandler(
@@ -33,12 +40,12 @@ Enhance your development workflow and elevate the overall quality of your app by
             ],
           ),
         ),
-      ),
+      );
 ```
 
 ## Author
 
-<a class="github-button" href="https://github.com/aabidsayeed1" aria-label="Follow @aabidsayeed1 on GitHub">Follow @aabidsayeed1</a>
+<a class="github-button" href="https://github.com/aabidsayeed1" aria-label="Follow @aabidsayeed1 on GitHub">Follow GitHub @aabidsayeed1</a>
 
-<a class="github-button" href="https://www.linkedin.com/in/aabidsayeed1/" aria-label="LinkedIn: aabidsayeed1">LinkedIn: @Abid Bin Syeed</a>
+<a class="github-button" href="https://www.linkedin.com/in/aabidsayeed1/" aria-label="LinkedIn: aabidsayeed1">Follow LinkedIn: @aabidsayeed1</a>
 

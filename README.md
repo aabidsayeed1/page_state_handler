@@ -20,7 +20,7 @@ PageStateController pageStateController = PageStateController();
 
 ```
 
-#### PageStateHandle Widget
+#### PageStateHandler Widget
 
 ```
  PageStateHandler(

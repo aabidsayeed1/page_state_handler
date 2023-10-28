@@ -5,27 +5,34 @@ import 'widgets/page_state_error_widget.dart';
 import 'package:get/get.dart';
 export 'page_state_enums.dart';
 
-// Use AlwaysScroo
 class PageStateHandler extends StatelessWidget {
-  // Controller to handle states of Page and Error Messages
+  /// Controller to handle states of Page and Error Messages
   final PageStateController controller;
-  // refresh your page or update data
-  // default refresh indicator is disabled, passing [onRefresh] will enable it
+
+  /// refresh your page or update data
+  /// default refresh indicator is disabled, passing [onRefresh] will enable it
   final RefreshCallback? onRefresh;
-  // Use your custom Retry callback in Error indicator widget
+
+  /// Use your custom Retry callback in Error indicator widget
   final VoidCallback? onRetry;
-  // turning [isChildScrollable] false will enable child scrollable
-  // if child is not scrollable
+
+  /// turning [isChildScrollable] false will enable child scrollable
+  /// if child is not scrollable
   final bool? isChildScrollable;
-  // physics will only work if [isChildScrollable] is false
+
+  /// physics will only work if [isChildScrollable] is false
   final ScrollPhysics? physics;
-  // Custom Loading Widget
+
+  /// Custom Loading Widget
   final Widget? loading;
-  // Custom Empty Widget
+
+  /// Custom Empty Widget
   final Widget? empty;
-  // Custom Error Widget
+
+  /// Custom Error Widget
   final Widget? error;
-  // Customize refresh indicator [r] stands for Refresh
+
+  /// Customize refresh indicator [r] stands for Refresh
   final double rDisplacement;
   final double rEdgeOffset;
   final Color? rColor;
@@ -35,10 +42,11 @@ class PageStateHandler extends StatelessWidget {
   final String? rSemanticsValue;
   final double rStrokeWidth;
   final RefreshIndicatorTriggerMode rTriggerMode;
-  // Pass any widget or list of widgets
-  // passing scrollable widget or list of widgets
-  // then ignore passing [isChildScrollable]
-  // by default it is false or assign true to let list of children scroll
+
+  /// Pass any widget or list of widgets
+  /// passing scrollable widget or list of widgets
+  /// then ignore passing [isChildScrollable]
+  /// by default it is false or assign true to let list of children scroll
   final Widget child;
 
   const PageStateHandler({
